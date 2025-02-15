@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nandita's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #121212;
+            color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #2e3a59;
+            animation: fadeIn 2s;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: #ffcc00;
+        }
+
+        .hero .icon-box {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .hero .icon-box img {
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hero .icon-box img:hover {
+            transform: scale(1.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 50px;
+            color: #ffcc00;
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 40px;
+            background: #1e2a3a;
+            border-radius: 10px;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .about div {
+            flex: 1;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+        }
+
+        .skills, .projects {
+            margin-top: 60px;
+        }
+
+        .skills h3, .projects h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .skills .skill-bar {
+            height: 20px;
+            background-color: #ffcc00;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: width 2s;
+        }
+
+        .skills .frontend { width: 90%; }
+        .skills .designing { width: 80%; }
+        .skills .backend { width: 60%; }
+
+        .projects .project {
+            background-color: #1e2a3a;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .projects .project h4 {
+            font-size: 1.5rem;
+            color: #ffcc00;
+        }
+
+        .projects .project p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .reach-out {
+            background-color: #2e3a59;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .reach-out h3 {
+            font-size: 2rem;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .reach-out a {
+            color: #ffcc00;
+            font-size: 2rem;
+            margin: 0 20px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .reach-out a:hover {
+            color: #f1f1f1;
+        }
+
+        .reach-out i {
+            margin-right: 10px;
+        }
+
+        .footer {
+            background-color: #121212;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .resume-btn {
+            display: block;
+            background-color: #ffcc00;
+            color: #121212;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin: 30px auto;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .resume-btn:hover {
+            background-color: #f1f1f1;
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <div class="icon-box">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Pikachu" />
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="about">
+            <div>
+                <h2>Nandita</h2>
+                <p class="bio">AI Specialist | DESIGN Enthusiast | UI/UX & Web Designer | Graphic Designer | Cloud Computing | Tech & Finance | Business Development | Photographer & Video Editor | Digital Marketer</p>
+            </div>
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" />
+        </section>
+
+        <section class="skills">
+            <h3>My Top Skills</h3>
+            <div class="skill-bar frontend"></div>
+            <p>Front-End Development/Designing</p>
+            <div class="skill-bar designing"></div>
+            <p>programming</p>
+            <div class="skill-bar backend"></div>
+            <p>Back-End Development</p>
+        </section>
+
+        <section class="projects">
+            <h3>My Projects</h3>
+            <div class="project">
+                <h4>AI Image Detector</h4>
+                <p>An AI-powered tool using Azure Computer Vision to detect objects, faces, or text in images.</p>
+            </div>
+            <div class="project">
+                <h4>AI Web App Creation</h4>
+                <p>A smart web application integrated with Azure AI services to analyze user behavior and provide real-time recommendations.</p>
+            </div>
+            <div class="project">
+                <h4>Chatbot Creation</h4>
+                <p>A conversational AI chatbot using Azure Bot Service & OpenAI API, capable of answering queries and automating responses.</p>
+            </div>
+            <div class="project">
+                <h4>Voice Recognition Assistant</h4>
+                <p>A voice-enabled AI assistant using Azure Speech Services to convert speech to text and respond intelligently.</p>
+            </div>
+            <div class="project">
+                <h4>AI Resume Scanner</h4>
+                <p>A recruitment tool that scans resumes using Azure Form Recognizer, extracting skills and matching them with job descriptions.</p>
+            </div>
+        </section>
+
+        <section class="reach-out">
+            <h3>Reach Me Out</h3>
+            <a href="mailto:nandita@example.com"><i class="fas fa-envelope"></i>Email</a>
+            <a href="https://www.linkedin.com/in/nandita"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            <a href="https://www.instagram.com/nandita"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="https://www.facebook.com/nandita"><i class="fab fa-facebook"></i>Facebook</a>
+        </section>
+
+        <a href="Nandita_Resume.pdf" class="resume-btn">Download Resume</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Nandita. All rights reserved.</p>
+        <script>
+            gsap.from(".hero h1", {duration: 1, opacity: 0, y: -50});
+            gsap.from(".profile", {duration: 1, opacity: 0, scale: 0.5, delay: 0.5});
+            gsap.from(".skills .skill", {duration: 1, opacity: 0, x: -50, stagger: 0.2, delay: 1});
+            gsap.from(".bars .bar", {duration: 1, opacity: 0, width: 0, stagger: 0.3, delay: 1.5});
+            gsap.from(".projects .project", {duration: 1, opacity: 0, y: 50, stagger: 0.2, delay: 2});
+            gsap.from(".contact .social-icons a", {duration: 1, opacity: 0, scale: 0, stagger: 0.2, delay: 2.5});
+        </script>
+    </div>
+</body>
+</html>
