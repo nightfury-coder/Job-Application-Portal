@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: url('https://raw.githubusercontent.com/sanjyotpanure/Job-Application-Portal/main/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            padding: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        .marquee {
+            background: rgba(20, 20, 20, 0.9);
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: auto;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .filter-section {
+            flex: 1;
+            min-width: 250px;
+            background: rgba(30, 30, 30, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+        .filter-section h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .filter-section label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .filter-section input {
+            margin-top: 5px;
+        }
+        .job-listings {
+            flex: 2;
+        }
+        .job-card {
+            background: rgba(255, 87, 34, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .job-card:hover {
+            transform: scale(1.05);
+        }
+        .job-card button {
+            background: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .job-card button:hover {
+            background: #e65100;
+        }
+        .job-application {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(30, 30, 30, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+        .job-application h2 {
+            margin-bottom: 15px;
+        }
+        .job-application label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .job-application input, .job-application button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .job-application button {
+            background: #ff9800;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Job Portal</h1>
+    <marquee class="marquee">"Your dream job is just a click away! Keep applying, keep growing."</marquee>
+    
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Job Listings</a>
+        <a href="#">Employer Dashboard</a>
+        <a href="#">Candidate Dashboard</a>
+    </div>
+    
+    <div class="container">
+        <div class="filter-section">
+            <h3>Filter Jobs</h3>
+            <label>Work Mode:</label>
+            <input type="checkbox"> Hybrid 
+            <input type="checkbox"> Online 
+            <input type="checkbox"> Offline 
+
+            <label>Location:</label>
+            <input type="checkbox"> New York 
+            <input type="checkbox"> San Francisco 
+
+            <label>Salary Range:</label>
+            <input type="checkbox"> $50,000 - $80,000
+            <input type="checkbox"> $80,000 - $120,000
+            <input type="checkbox"> $120,000+
+
+            <label>Company Type:</label>
+            <input type="checkbox"> Startup 
+            <input type="checkbox"> MNC 
+            <input type="checkbox"> Government 
+
+            <label>Experience Level:</label>
+            <input type="checkbox"> Entry Level 
+            <input type="checkbox"> Mid Level 
+            <input type="checkbox"> Senior Level 
+        </div>
+        
+        <div class="job-listings">
+            <input type="text" class="search-bar" placeholder="Search for jobs...">
+            
+            <div class="job-card">
+                <h2>Software Engineer</h2>
+                <p>Company: Google</p>
+                <p>Location: New York</p>
+                <p>Work Mode: Hybrid</p>
+                <p>Salary: $120,000/year</p>
+                <button>Apply Now</button>
+            </div>
+            
+            <div class="job-card">
+                <h2>Data Analyst</h2>
+                <p>Company: Microsoft</p>
+                <p>Location: San Francisco</p>
+                <p>Work Mode: Remote</p>
+                <p>Salary: $110,000/year</p>
+                <button>Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h2>Marketing Manager</h2>
+                <p>Company: Amazon</p>
+                <p>Location: Seattle</p>
+                <p>Work Mode: On-Site</p>
+                <p>Salary: $90,000/year</p>
+                <p>Responsibilities: Develop and implement marketing strategies.</p>
+                <p>Qualifications: MBA in Marketing.</p>
+                <button>Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h2>Graphic Designer</h2>
+                <p>Company: Adobe</p>
+                <p>Location: Los Angeles</p>
+                <p>Work Mode: Remote</p>
+                <p>Salary: $85,000/year</p>
+                <p>Responsibilities: Design visual concepts and create graphics.</p>
+                <p>Qualifications: Degree in Graphic Design or related field.</p>
+                <button>Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h2>Cybersecurity Analyst</h2>
+                <p>Company: IBM</p>
+                <p>Location: Chicago</p>
+                <p>Work Mode: Hybrid</p>
+                <p>Salary: $105,000/year</p>
+                <p>Responsibilities: Monitor and protect company networks.</p>
+                <p>Qualifications: Bachelor's in Cybersecurity or related field.</p>
+                <button>Apply Now</button>
+        </div>
+    </div>
+
+    <div class="job-application">
+        <h2>Job Application Process</h2>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume">
+        
+        <button type="submit">Submit Application</button>
+    </div>
+    <script>
+        function scrollToApplication() {
+            document.getElementById("application").scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
